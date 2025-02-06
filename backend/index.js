@@ -1,9 +1,13 @@
 const express = require("express");
+const cors = require("cors");
+
 const { connection, PORT } = require("./config/db");
 const { userRouter } = require("./routes/UserRoutes");
+const { taskRouter } = require("./routes/TaskRoutes");
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 
 app.get("/", (req, res) => {
@@ -12,7 +16,7 @@ app.get("/", (req, res) => {
 
 
 app.use("/api/users", userRouter);
-
+app.use("/api/tasks", taskRouter);
 
 app.listen(PORT, async () => {
   try {
