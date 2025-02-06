@@ -1,16 +1,17 @@
+import { BrowserRouter as Router } from "react-router-dom";
 
-import './App.css'
+import { AuthProvider } from "./context/AuthContext";
 
-function App() {
-  
+import AppRoutes from "./routes/AppRoutes";
 
+const App = () => {
   return (
-  <div>
- <h1 className="text-3xl font-bold underline text-blue-500 ">
-    Hello world!
-  </h1>
-  </div>
-  )
-}
+    <AuthProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </AuthProvider>
+  );
+};
 
-export default App
+export default App;
