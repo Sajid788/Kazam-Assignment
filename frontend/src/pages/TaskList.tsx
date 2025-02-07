@@ -74,7 +74,7 @@ const TaskList = ({
 
       toast.success(response.data.message);
       fetchTasks(); // Refresh the task list
-      setIsDeleteModalOpen(false); // Close modal
+      setIsDeleteModalOpen(false); 
       setTaskToDelete(null);
     } catch (error) {
       console.error("Error deleting task:", error);
@@ -82,7 +82,7 @@ const TaskList = ({
   };
 
   return (
-    <div className="mt-10 pb-10 grid grid-cols-3 gap-5">
+    <div className="mt-10 pb-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
       {tasks.length === 0 ? (
         <div className="text-center mt-40">
           <h1 className="text-2xl font-bold">No tasks added yet</h1>
