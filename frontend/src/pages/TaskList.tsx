@@ -31,7 +31,7 @@ const TaskList = ({
       const token = localStorage.getItem("token");
       if (!token) return console.error("No token found, please log in.");
 
-      await axios.put(`http://localhost:8080/api/tasks/complete/${task._id}`, {
+      await axios.put(`https://kazam-assignment-sigma.vercel.app/api/tasks/complete/${task._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -63,7 +63,7 @@ const TaskList = ({
       }
 
       const response = await axios.delete(
-        `http://localhost:8080/api/tasks/delete/${taskToDelete._id}`,
+        `https://kazam-assignment-sigma.vercel.app/api/tasks/delete/${taskToDelete._id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

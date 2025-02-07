@@ -25,7 +25,7 @@ const Tasks = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.get("http://localhost:8080/api/tasks/mytasks", {
+      const response = await axios.get("https://kazam-assignment-sigma.vercel.app/api/tasks/mytasks", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTasks(response.data);

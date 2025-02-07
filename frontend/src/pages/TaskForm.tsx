@@ -33,14 +33,14 @@ const TaskForm = ({ fetchTasks, closeModal, task }: TaskFormProps) => {
     try {
       if (task) {
         const response = await axios.put(
-          `http://localhost:8080/api/tasks/update/${task._id}`,
+          `https://kazam-assignment-sigma.vercel.app/api/tasks/update/${task._id}`,
           payload,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         toast.success(response.data.message);
       } else {
         const response = await axios.post(
-          "http://localhost:8080/api/tasks/create",
+          "https://kazam-assignment-sigma.vercel.app/api/tasks/create",
           payload,
           { headers: { Authorization: `Bearer ${token}` } }
         );
