@@ -31,9 +31,12 @@ const TaskList = ({
       const token = localStorage.getItem("token");
       if (!token) return console.error("No token found, please log in.");
 
-      await axios.put(`https://kazam-assignment-sigma.vercel.app/api/tasks/complete/${task._id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      await axios.put(
+        `https://kazam-assignment-sigma.vercel.app/api/tasks/complete/${task._id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
 
       if (!task.completed) {
         toast.warn(`Task "${task.title}" marked as incomplete.`);
@@ -95,16 +98,19 @@ const TaskList = ({
           >
             <div>
               {task.completed ? (
-                <div className="py-1 w-[40%] px-4 flex gap-2 items-center border rounded border-yellow-200 bg-amber-100">
-                <FaClock className="h-4 w-4 text-yellow-600" />
-                <span className="text-yellow-600 text-sm font-semibold">Pending</span>
-              </div>
-              ) : (
                 <div className="py-1 w-[40%]  px-4 bg-green-100 flex gap-2 items-center border rounded border-green-200">
-                <IoCheckmarkDoneCircle className="h-5 w-5 text-green-600" />
-                <span className="text-green-600 text-sm font-semibold">Completed</span>
-              </div>
-               
+                  <IoCheckmarkDoneCircle className="h-5 w-5 text-green-600" />
+                  <span className="text-green-600 text-sm font-semibold">
+                    Completed
+                  </span>
+                </div>
+              ) : (
+                <div className="py-1 w-[40%] px-4 flex gap-2 items-center border rounded border-yellow-200 bg-amber-100">
+                  <FaClock className="h-4 w-4 text-yellow-600" />
+                  <span className="text-yellow-600 text-sm font-semibold">
+                    Pending
+                  </span>
+                </div>
               )}
             </div>
 
@@ -138,9 +144,9 @@ const TaskList = ({
                 <button onClick={() => handleMarkCompleted(task)}>
                   <div>
                     {task.completed === true ? (
-                      <FaClock className="h-5 w-5 text-yellow-600 cursor-pointer" />
-                    ) : (
                       <IoCheckmarkDoneCircle className="h-6 w-6 text-green-600 cursor-pointer" />
+                    ) : (
+                      <FaClock className="h-5 w-5 text-yellow-600 cursor-pointer" />
                     )}
                   </div>
                 </button>

@@ -36,7 +36,7 @@ const Login = () => {
         <p className="mb-8 px-[2rem] text-center text-[#999] text-[14px]">
           Login Now. Don't have an account?{" "}
           <a
-            href="/signup"
+            // href="/signup"
             className="font-bold text-[#2ECC71] hover:text-[#7263F3] transition-all duration-300"
           >
             Register here

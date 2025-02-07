@@ -24,41 +24,6 @@ const Signup = () => {
   };
 
   return (
-    // <div className="flex items-center justify-center h-screen bg-gray-100">
-    //   <div className="bg-white p-6 rounded shadow-md w-96">
-    //     <h2 className="text-xl font-bold mb-4">Signup</h2>
-    //     <form onSubmit={handleSubmit}>
-    //       <input
-
-    //         type="text"
-    //         placeholder="Name"
-    //
-    //         value={name}
-    //         onChange={(e) => setName(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="email"
-    //         placeholder="Email"
-
-    //         value={email}
-    //         onChange={(e) => setEmail(e.target.value)}
-    //         required
-    //       />
-    //       <input
-    //         type="password"
-    //         placeholder="Password"
-
-    //         value={password}
-    //         onChange={(e) => setPassword(e.target.value)}
-    //         required
-    //       />
-    //       <button type="submit" className="w-full bg-green-500 text-white p-2">
-    //         Signup
-    //       </button>
-    //     </form>
-    //   </div>
-    // </div>
     <div className="flex items-center justify-center">
       <form className="relative mt-[3rem] px-10 py-10 rounded-lg bg-white w-full max-w-[520px]" onSubmit={handleSubmit}>
         <div className="relative z-10">
@@ -68,7 +33,7 @@ const Signup = () => {
           <p className="mb-8 px-[2rem] text-center text-[#999] text-[14px]">
             Create an account. Already have an account?{" "}
             <a
-              href="/login"
+              // href="/login"
               className="font-bold text-[#2ECC71] hover:text-[#7263F3] transition-all duration-300"
             >
               Login here
