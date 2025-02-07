@@ -256,6 +256,17 @@ Try accessing any `/api/tasks` route without a token.
 - **Frontend**: React, TypeScript, Tailwind CSS, Context API
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt, joe
 
+## 📌 Application ScreenShots
+
+![image](https://github.com/user-attachments/assets/83c09bcc-edbe-4191-a787-6964cf28251e)
+![image](https://github.com/user-attachments/assets/8ab3d11b-0899-4418-b6e5-f086df544ed7)
+![image](https://github.com/user-attachments/assets/c91f55ab-d84b-4bc4-b064-1cb281866ce3)
+![image](https://github.com/user-attachments/assets/9f2f9c4e-2d98-4c33-8df9-57bd1d8fb53c)
+![image](https://github.com/user-attachments/assets/e26a4fb4-72ba-4818-8802-2861ffb0d4b1)
+
+
+
+
 ## License
 This project is open-source and available under the MIT License.
 
