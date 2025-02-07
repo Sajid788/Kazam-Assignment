@@ -22,7 +22,10 @@ const Signup = () => {
     } catch (error) {
       toast.error("signup failed. Please check your credentials.");
       console.error("Signup failed", error);
+    }finally {
+      setLoading(false); 
     }
+    
   };
 
   return (
