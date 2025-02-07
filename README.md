@@ -7,6 +7,7 @@ This is a full-stack task management application built using the MERN stack (Mon
 - **User Authentication**: JWT-based login and password hashing using bcrypt.
 - **Task Management**: CRUD operations for tasks, marking tasks as completed or pending.
 - **Task Listing Page**: Search and filter options for better task management.
+- **Input validation**: with Joi for secure and accurate data entry
 - **Responsive UI**: Built using Tailwind CSS.
 - **State Management**: Utilizes Context API.
 - **Protected Routes**: Ensures only authenticated users can access task-related features.
