@@ -38,7 +38,7 @@ const TaskList = ({
         }
       );
 
-      if (!task.completed) {
+      if (task.completed) {
         toast.warn(`Task "${task.title}" marked as incomplete.`);
       } else {
         toast.success(`Task "${task.title}" marked as completed.`);
