@@ -1,7 +1,8 @@
 # Task Management Application (MERN)
 
 ## Overview
-This is a full-stack task management application built using the MERN stack (MongoDB, Express.js, React, Node.js) with TypeScript. Users can register, log in, create, update, delete, and mark tasks as completed. The application features JWT-based authentication, protected routes, and a responsive UI using Tailwind CSS.
+This is a full-stack task management application built using the MERN stack (MongoDB, Express.js, React, Node.js) with TypeScript. Users can register, log in, create, update, delete, and mark tasks as completed. The 
+application features JWT-based authentication, protected routes, and a responsive UI using Tailwind CSS.
 
 ## Features
 - **User Authentication**: JWT-based login and password hashing using bcrypt.
@@ -13,6 +14,10 @@ This is a full-stack task management application built using the MERN stack (Mon
 - **Protected Routes**: Ensures only authenticated users can access task-related features.
 
 ---
+
+## Deploy App 
+- Frontend : https://kazam-assignment-bayo.vercel.app/
+- backend : https://kazam-assignment-sigma.vercel.app
 
 ## Project Structure
 
@@ -60,6 +65,13 @@ frontend/src/
 ├── index.css                   # Index styles
 ├── main.tsx                    # Entry point of the frontend
 ```
+
+## Video Walkthrough of the Project
+https://github.com/user-attachments/assets/10ab9372-9a8d-4a1b-93b6-3f13695d13d2
+
+## Video Walkthrough of the Codebase
+- Link : https://drive.google.com/file/d/16P6Vi8R2Pi2rhZVyRxrnlIraQoz3xXkO/view?usp=sharing
+
 
 ## 🛠️ Installation & Setup
 
