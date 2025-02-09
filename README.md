@@ -17,7 +17,7 @@ application features JWT-based authentication, protected routes, and a responsiv
 
 ## Deploy App 
 - Frontend : https://kazam-assignment-bayo.vercel.app/
-- backend : https://kazam-assignment-sigma.vercel.app
+- backend : https://kazam-assignment-sigma.vercel.app/
 
 ## Project Structure
 
